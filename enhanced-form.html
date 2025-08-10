@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel requirements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: auto;
+            padding: 10px 20px;
+        }
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+        footer {
+            text-align: center;
+            background: #f4f4f4;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Documents to submit</h1>
+    <p>Passport,National ID,Higher Education Certificate, Form</p>
+</header>
+
+<nav>
+    <a href="#passport">Passport</a>
+    <a href="#National ID">National ID</a>
+    <a href="#Higher Education Certificate">Higher Education Certificate</a>
+    <a href="#form">Form</a>
+</nav>
+
+<main>
+
+    <!-- LISTS SECTION -->
+    <section id="Passport">
+        <h2>Your International passport</h2>
+        <p>Ensure your passport is valid for traveling</p>
+        <h3>Other requirements under this</h3>
+        <ul>
+            <li>4 biometric passport photos</li>
+            <li>Copy of your Birth Certificate</li>
+        </ul>
+
+        <h3>Proof</h3>
+        <ol>
+            <li>Proof of residence</li>
+            <li>proof or employment</li>
+        
+        </ol>
+    </section>
+
+    <!-- National ID SECTION -->
+    <section id="National ID">
+        <h2>Your proof of citizenship</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Date of birth</th>
+                    <th>Birth Certificate Entry number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>enthnicity</td>
+                    <td>Enter date</td>
+                    <td>ten digits number</td>
+                </tr>
+                <tr>
+                    <td>words</td>
+                    <td>date/month/year</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>words</td>
+                    <td>date/month/year</td>
+                    <td>Value</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Higher Education SECTION -->
+    <section id="Higher Education Certificate">
+        <h2>University Certificate</h2>
+
+        <h3>Certificate</h3>
+        <img src="https://via.placeholder.com/500x300" alt="Sample Placeholder" width="500">
+
+        <h3>Introduce yourself with an Audio</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Send an introductory Video</h3>
+        <video width="500" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section id="form">
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 0712345678" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="topic">Topic of Interest:</label>
+                <select id="topic" name="topic" required>
+                    <option value="">--Please choose--</option>
+                    <option value="web">Web Development</option>
+                    <option value="design">UI/UX Design</option>
+                    <option value="marketing">Digital Marketing</option>
+                </select>
+
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label>
+
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Subscribe to Newsletter
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" minlength="10" required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit Form">
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML5 Showcase. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
